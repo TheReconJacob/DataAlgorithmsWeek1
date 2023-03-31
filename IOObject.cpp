@@ -18,3 +18,9 @@ int IOObject::factorial(int n) {
 	for (t = 1; t <= n; t++) result *= t;
 	return result;
 }
+
+int IOObject::factorialR(int n) {
+	if (n == 1)
+		return 1;
+	return factorialR(n - 1) * n;
+}
